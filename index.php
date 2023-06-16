@@ -6,10 +6,10 @@ $cards = [];
 // when building the names of every card, in other words, each
 // card is named "X of Y".
 $card_suffixes = [
-    'of Clubs',
-    'of Spades',
-    'of Diamonds',
-    'of Hearts'
+    'of Picas',
+    'of Espadas',
+    'of Diamantes',
+    'of Corazones'
 ];
 
 // Build the cards loop, loop over each card type, adding the 12 cards of that type 
@@ -23,9 +23,9 @@ foreach ($card_suffixes as $card_suffix) {
     }
 
     // Add the 3 remaining "non-numeric" cards, "Something of Y"
-    $cards[] = "Jack $card_suffix";
-    $cards[] = "Queen $card_suffix";
-    $cards[] = "King $card_suffix";
+    $cards[] = "Alfil $card_suffix";
+    $cards[] = "Reina $card_suffix";
+    $cards[] = "Rey $card_suffix";
 }
 
 // We now have an array with 52 card names
@@ -44,4 +44,5 @@ echo '<h2>' . $cards[$rand2] . '<h2>';
 
 // Refresh link, because browser caching is a bitch
 $now = time();
-echo "<br><a href=\"?t=$now\">Get new cards</a>";
+echo "<br><a href=\"?t=$now\">Obtener Nuevas Cartas</a>";
+echo '<h3> La semilla para el rand es: ' . $now . '<h3>';
