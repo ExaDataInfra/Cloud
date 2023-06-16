@@ -9,7 +9,8 @@ $card_suffixes = [
     'of Picas',
     'of Espadas',
     'of Diamantes',
-    'of Corazones'
+    'of Corazones',
+    'of Tecera'
 ];
 
 // Build the cards loop, loop over each card type, adding the 12 cards of that type 
