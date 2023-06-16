@@ -25,7 +25,7 @@ foreach ($card_suffixes as $card_suffix) {
     // Add the 3 remaining "non-numeric" cards, "Something of Y"
     $cards[] = "Jack $card_suffix";
     $cards[] = "Queen $card_suffix";
-    $cards[] = "King $card_suffix";
+    $cards[] = "Rey $card_suffix";
 }
 
 // We now have an array with 52 card names
